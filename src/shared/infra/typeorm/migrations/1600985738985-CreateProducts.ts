@@ -13,30 +13,11 @@ export class CreateProducts1600985738985 implements MigrationInterface {
             generationStrategy: 'uuid',
             default: 'uuid_generate_v4()',
           },
-          {
-            name: 'name',
-            type: 'varchar',
-          },
-          {
-            name: 'price',
-            type: 'decimal',
-            precision: 2,
-            scale: 2,
-          },
-          {
-            name: 'quantity',
-            type: 'int',
-          },
-          {
-            name: 'created_at',
-            type: 'timestamp',
-            default: 'now()',
-          },
-          {
-            name: 'updated_at',
-            type: 'timestamp',
-            default: 'now()',
-          },
+          { name: 'name', type: 'varchar' },
+          { name: 'price', type: 'decimal', precision: 20, scale: 2 },
+          { name: 'quantity', type: 'int' },
+          { name: 'created_at', type: 'timestamp', default: 'now()' },
+          { name: 'updated_at', type: 'timestamp', default: 'now()' },
         ],
       }),
     );

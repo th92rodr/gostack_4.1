@@ -1,9 +1,9 @@
 import { getRepository, Repository } from 'typeorm';
 
-import IOrdersRepository from '@modules/orders/repositories/IOrdersRepository';
-import ICreateOrderDTO from '@modules/orders/dtos/ICreateOrderDTO';
 import Order from '../entities/Order';
 import OrdersProducts from '../entities/OrdersProducts';
+import ICreateOrderDTO from '@modules/orders/dtos/ICreateOrderDTO';
+import IOrdersRepository from '@modules/orders/repositories/IOrdersRepository';
 
 class OrdersRepository implements IOrdersRepository {
   private ormRepository: Repository<Order>;
